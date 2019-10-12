@@ -1,11 +1,11 @@
 document.write("<p>金字塔</p>")
-let leval = prompt('请设置金字塔的层数')
-leval = parseFloat(leval)&&Number(leval)
-if (isNaN(leval)){
+let level = prompt('请设置金字塔的层数')
+level = parseFloat(level)&&Number(level)
+if (isNaN(level)){
     alert('金字塔的层数是数字')
 }
-for(let i=1;i<=leval;++1){
-    let blank = leval - i;
+for(let i=1;i<=level;++i){
+    let blank = level - i;
     for(let k=0;k<blank;++k){
         document.write('&nbsp;');
     }
@@ -15,7 +15,7 @@ for(let i=1;i<=leval;++1){
         document.write('*')
     }
     //换行
-    document.write('<br>')
+    document.write("<br>")
 }
 
 let str = '<table border="1">'
